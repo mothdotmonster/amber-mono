@@ -1,2 +1,2 @@
 # amber-mono
-Amber Mono is the official theme of moth.monster
+a simple 4-color monochrome theme, inspired by vintage amber displays.
