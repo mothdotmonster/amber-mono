@@ -1,0 +1,95 @@
+//      ▀█        ▐█  ███████▌     ▐██████▌ █           ▄▀     
+//  █▌   █        ▐█  ███████▌     ▐██████▌ █           █      
+//  ▀▜██▄▄█▌      ▝▀▄ ██████▀▘     ▐█████▌▐█▀         ▐█       
+//   ▝▜█            ▀█▄▞▀▀▀▀          ▀█▄▟▌         ▄▞▘        
+//      █             ██▌             ████▌        ██████      
+//       ▀▄▖            ▝▀███▙▄▄▄▄▄▟▛▀▀██▙▟█ ▄      ▄▄▄▄▀▀     
+//        ▀▀▚▄         ▐███▀▀▘         ▀▀▜▙▄██ ▗▄▄▀▀▀▘         
+//            ██     ██▌▐██             █████ ██▌ ██           
+//          ▗▄▀▀      ██▛▀▀▀    ▄▄      ▀▘▗▄████▙▄█▀▄▄▖        
+//        ▄▞▘ ▄▄▄▄▄▄██████▄      █▀▚▄▄   ▗▟█▀ ██▛▀████▙▄█  ▐▌  
+//        █████ ██▌ ████████    ██    ████▌   █▌  ██████████▌  
+//    ▗▄  █▛▜██▄██▛▀███▌▝▀▀█▄▄▄▄█                 ▀ ██▌ ██▀▜██▀
+// ▄█▙▟████████▀██▌  ▀▀▜▌                               ▀      
+// ███████  ▐██  ▐██                                           
+// ▀  ▝▀ █  ▝▀█  ▝▀▀             amber-mono for Rofi
+
+* {
+    font:   "Terminus 12";
+
+    background-color:   transparent;
+    text-color:         #fc9505;
+    accent-color:       #fc9505;
+
+    margin:     0px;
+    padding:    0px;
+    spacing:    0px;
+}
+
+window {
+    location:           north;
+    width:              100%;
+    background-color:   #140b05;
+    children:           [ mainbox,message ];
+}
+
+mainbox {
+    orientation:    horizontal;
+    children:       [ inputbar,listview ];
+}
+
+inputbar {
+    width:      25%;
+    padding:    1px 8px;
+    spacing:    8px;
+    children:   [ prompt, entry ];
+}
+
+prompt, entry, element-text, element-icon {
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @accent-color;
+}
+
+listview {
+    layout: horizontal;
+}
+
+element {
+    padding:    1px 8px;
+    spacing:    4px;
+}
+
+element normal urgent {
+    text-color: #fc9505;
+}
+
+element normal active {
+    text-color: @accent-color;
+}
+
+element selected {
+    text-color: #140b05;
+}
+
+element selected normal {
+    background-color:   @accent-color;
+}
+
+element selected urgent {
+    background-color:   #fc9505;
+}
+
+element selected active {
+    background-color:   #fc9505;
+}
+
+element-icon {
+    size:   0.75em;
+}
+
+element-text {
+    text-color: inherit;
+}
