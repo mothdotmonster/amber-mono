@@ -31,7 +31,7 @@ client.background       #140b05
 
 ## Rofi
 
-`amber-mono.rafi` is a Rofi theme file which creates a dmenu replacement in this color scheme. Copy it to `~/.local/share/rofi/themes/` and use rofi-theme-selector to enable it.
+`amber-mono.rafi` is a Rofi theme file which creates a dmenu replacement in this color scheme. Place it in `~/.local/share/rofi/themes/` and use rofi-theme-selector to enable it.
 
 ## Pleroma
 
