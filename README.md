@@ -1,7 +1,7 @@
 # Amber Mono
 ![amber-mono](amber-mono.png)
 
-A 4-color theme inspired by amber monochrome displays.
+A 4-color scheme inspired by amber monochrome displays.
 
 If you make a theme using this color scheme, feel free to make a pull request!
 
